@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(word_array)
-    word_array.select do |compare_word|
+    word_array.select do |array_word|
       @word.split.sort == maybe_anagram.split.sort
     end
   end
